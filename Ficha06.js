@@ -204,3 +204,87 @@ for (let i = 0; i < arrayNomes.length; i++) {
     console.log(`${arrayNomes[i]}: posição: ${i}`);
 }
 
+// Loops While e do-While
+
+// 17
+let numContagem = 10;
+
+do {
+    console.log(numContagem);
+    numContagem--;
+
+} while (numContagem >= 0);
+
+
+// 18
+let numContagemPares = 20;
+
+while(numContagemPares >= 0) {
+    if (numContagemPares % 2 === 0) {
+        console.log(`número: ${numContagemPares} é par`);
+    }
+    numContagemPares--;
+}
+
+// 19
+//19.1 
+let arrayNotas = [10, 3, 15, 18, 20];
+let maiorNota = arrayNotas[0];
+let menorNota = arrayNotas[0];
+
+let somaNotas = 0;
+let media = 0;
+
+let qtdExcelente = 0;
+let qtdBom = 0;
+let qtdSuficiente = 0;
+let qtdInsuficiente = 0;
+
+let iNotas = arrayNotas.length - 1
+
+while (iNotas >= 0) {
+    
+    
+    if (arrayNotas[iNotas] > maiorNota) {
+        maiorNota = arrayNotas[iNotas];
+    }
+    else if (arrayNotas[iNotas] < menorNota) {
+        menorNota = arrayNotas[iNotas];
+    }
+
+    somaNotas += arrayNotas[iNotas];
+
+    if (arrayNotas[iNotas] >= 18) {
+        qtdExcelente++
+        console.log(`${arrayNotas[iNotas]} tem Excelente`);
+    }
+
+    
+    if (arrayNotas[iNotas] >= 15 && arrayNotas[iNotas] < 18) {
+        qtdBom++
+        console.log(`${arrayNotas[iNotas]} tem Bom`);
+    }
+
+    
+    if (arrayNotas[iNotas] >= 10  && arrayNotas[iNotas] < 15) {
+        qtdSuficiente++
+        console.log(`${arrayNotas[iNotas]} tem Suficiente`);
+    }
+
+    
+    if (arrayNotas[iNotas] < 10) {
+        qtdInsuficiente++
+        console.log(`${arrayNotas[iNotas]} tem Insuficiente`);
+    }
+
+    iNotas--;
+}
+
+
+media = somaNotas/arrayNotas.length;
+console.log("Média: ", media);
+console.log("Quantidade Excelente: ", qtdExcelente);
+console.log("Quantidade Bom: ", qtdBom);
+console.log("Quantidade Suficiente: ", qtdSuficiente);
+console.log("Quantidade Insuficiente: ", qtdInsuficiente);
+

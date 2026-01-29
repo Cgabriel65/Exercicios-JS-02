@@ -145,4 +145,17 @@ switch(mes) {
         break;       
 }
 
-//
+//Operador Ternário
+
+//9
+let valorCompra = 200;
+let valorFinal = valorCompra > 100 ? valorCompra * 0.90 : valorCompra;
+console.log(valorFinal);
+
+
+//10
+let notaAluno = 7;
+let statusAluno = notaAluno >= 10 ? "Aprovado" : "Reprovado";
+console.log(statusAluno);
+
+

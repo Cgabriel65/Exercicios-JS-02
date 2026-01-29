@@ -46,3 +46,70 @@ if (num1 > num2) {
     console.log(`num1: ${num1} é igual a num2: ${num2}`);
 }
 
+
+
+//Truthy e Falsy
+
+// 5
+
+let nome = "";
+let nome2 = "Cláudio";
+
+if (nome) {
+    console.log("Nome preenchido");    
+} else {
+    console.log("Nome vazio");
+}
+
+// 6
+
+let varTeste = 0;
+let varTeste1 = "";
+let varTeste2 = undefined;
+let varTeste3 = "texto";
+
+if (varTeste3) {
+    console.log("valor Truthy");
+} else {
+    console.log("valor Falsy");
+}
+
+//Switch Case
+
+// 7
+let dia = 3;
+
+switch (dia) {
+    case 1 : 
+        console.log("Segunda");
+        break;
+    case 2: 
+        console.log("Terça");
+        break;
+
+    case 3:
+        console.log("Quarta");
+        break;
+    case 4:
+        console.log("Quinta");
+        break;
+
+    case 5: 
+        console.log("Sexta");
+        break;
+
+    case 6:
+        console.log("Sábado");
+        break;
+
+    case 7:
+        console.log("Domingo");                         
+        break;
+
+    default:
+        console.log("Não encontrado");
+
+}
+
+
+// 8

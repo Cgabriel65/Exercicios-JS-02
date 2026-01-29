@@ -288,3 +288,28 @@ console.log("Quantidade Bom: ", qtdBom);
 console.log("Quantidade Suficiente: ", qtdSuficiente);
 console.log("Quantidade Insuficiente: ", qtdInsuficiente);
 
+//Exercicios Lógica
+
+//Exercicio 1:
+let numerosFizz = 20;
+
+for(let i = 1; i <= 20; i++) {
+    console.log(i)
+    if (i % 5 === 0 && i % 3 === 0) {
+        console.log("FizzBuzz");
+    } else if (i % 5) {
+        console.log("Fizz");
+    } else if (i % 3) {
+        console.log("Buzz");
+    }
+}
+
+//Exercicio2:
+let num = 5
+let fatorial = 1
+for (let i = num; i > 0; i--) {
+    fatorial *= i;
+}
+
+console.log("Fatorial: ", fatorial);
+

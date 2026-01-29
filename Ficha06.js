@@ -177,5 +177,30 @@ console.log(numeros);
 
 // loops For
 
+// 13
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
 
+
+// 14
+let numTabuada = 3;
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`${numTabuada} x ${i} = ${numTabuada * i}`);
+}
+
+// 15
+let soma = 0
+for (let i = 1; i <= 100; i++) {
+    soma += i;
+}
+console.log(soma);
+
+
+// 16
+let arrayNomes = ["Cláudio", "João", "Pedro", "Rui", "Zé"];
+for (let i = 0; i < arrayNomes.length; i++) {
+    console.log(`${arrayNomes[i]}: posição: ${i}`);
+}
 

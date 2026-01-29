@@ -159,3 +159,23 @@ let statusAluno = notaAluno >= 10 ? "Aprovado" : "Reprovado";
 console.log(statusAluno);
 
 
+//Arrays
+
+// 11
+let arrayFrutas = ["Maçã", "Pêra", "Laranja", "Ananás", "Banana"];
+console.log(arrayFrutas[0]);
+console.log(arrayFrutas[4]);
+
+
+// 12
+let numeros = [];
+numeros.push(10, 20, 30);
+console.log(numeros);
+
+numeros.pop();
+console.log(numeros);
+
+// loops For
+
+
+
